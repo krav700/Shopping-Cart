@@ -1,15 +1,14 @@
-import { Link } from "react-router"
+import { Link } from "react-router-dom";
 
 function Header() {
-    return (
-        <>
-            <h1>Header</h1>
-            <Link to="/">Home</Link>
-            <Link to="shop">Shop</Link>
-            <Link to="cart">Cart</Link>
-
-        </>
-    )
+  return (
+    <>
+      <h1>Header</h1>
+      <Link to="/">Home</Link>
+      <Link to="shop">Shop</Link>
+      <Link to="cart">Cart</Link>
+    </>
+  );
 }
 
 export default Header;
