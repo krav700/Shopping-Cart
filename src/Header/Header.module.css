@@ -1,0 +1,35 @@
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 20px;
+}
+
+.cart-items {
+    align-self: start;
+    border: 1px solid black;
+    padding-inline: 10px;
+    border-radius: 100vw;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    grid-column: 2;
+    font-size: 2rem;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
