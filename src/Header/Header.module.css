@@ -3,14 +3,20 @@
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    font-size: 20px;
+    font-size: 15px;
 }
-
+svg {
+    cursor: pointer;
+}
 .cart-items {
     align-self: start;
-    border: 1px solid black;
-    padding-inline: 10px;
+    border: 1.5px solid black;
+    padding-inline: 7.5px;
     border-radius: 100vw;
+    position: relative;
+    right: 15px;
+    bottom: 10px;
+    background-color: rgb(150 0 0 / 0.6);
 }
 
 .link:hover {
