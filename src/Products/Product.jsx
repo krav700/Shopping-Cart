@@ -1,6 +1,7 @@
 import ProductStyles from "./Product.module.css";
 import { useContext, useState } from "react";
 import { CartContext } from "../App/App.jsx";
+import { Link } from "react-router";
 
 function Product({ title, image, price }) {
     const { cartItems, setCartItems } = useContext(CartContext);
@@ -54,7 +55,9 @@ function Product({ title, image, price }) {
                 </div>
                 <div className={ProductStyles["buy-buttons"]}>
                     <button onClick={addToCart}>Add to Cart</button>
-                    <button>Checkout</button>
+                    <Link to={"/cart"}>
+                        <button onClick={addToCart}>Checkout</button>
+                    </Link>
                 </div>
             </div>
         </div>
