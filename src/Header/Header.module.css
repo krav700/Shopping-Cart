@@ -5,6 +5,11 @@
     gap: 0.5rem;
     font-size: 15px;
 }
+
+.cart-link {
+    color: #FFFFFF;
+}
+
 svg {
     cursor: pointer;
 }

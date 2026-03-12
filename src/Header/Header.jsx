@@ -24,15 +24,17 @@ function Header() {
                         Shop
                     </Link>
                     <Link to="cart" className={HeaderStyles.link}>
-                        Cart
+                      Cart
                     </Link>
                 </div>
+                <Link to="cart" className={HeaderStyles["cart-link"]}>
                 <div className={HeaderStyles.cart}>
-                    <ShoppingCart size={40} />
-                    <span className={HeaderStyles["cart-items"]}>
-                        {productCount}
-                    </span>
+                      <ShoppingCart size={40} />
+                      <span className={HeaderStyles["cart-items"]}>
+                          {productCount}
+                      </span>
                 </div>
+                </Link>
             </div>
         </>
     );
