@@ -2,16 +2,19 @@ import { Link } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
 import HeaderStyles from "./Header.module.css";
 import { CartContext } from "../App/App.jsx";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 function Header() {
-    const { cartItems, setCartItems } = useContext(CartContext);
-    let productCount = 0;
-    console.log(cartItems);
-    if (cartItems.length != 0) {
+    const { cartItems } = useContext(CartContext);
+    const [cartProductCount, setCartProductCount] = useState(0);
+    useEffect(() => {
+      console.log("CART UPDATED2");
+
+      let cartProductCountSum = 0;
       cartItems.map((product) => {
-        productCount += product.count;
+        cartProductCountSum += Number(product.count);
       });
-    }
+      setCartProductCount(cartProductCountSum);
+    }, [cartItems])
     return (
         <>
             <h1>Header</h1>
@@ -31,7 +34,7 @@ function Header() {
                 <div className={HeaderStyles.cart}>
                       <ShoppingCart size={40} />
                       <span className={HeaderStyles["cart-items"]}>
-                          {productCount}
+                          {cartProductCount}
                       </span>
                 </div>
                 </Link>
