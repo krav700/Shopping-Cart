@@ -18,27 +18,29 @@ function Header() {
     return (
         <>
             <h1>Header</h1>
-            <div className={HeaderStyles.body}>
-                <div className={HeaderStyles.links}>
-                    <Link to="/" className={HeaderStyles.link}>
-                        Home
-                    </Link>
-                    <Link to="shop" className={HeaderStyles.link}>
-                        Shop
-                    </Link>
-                    <Link to="cart" className={HeaderStyles.link}>
-                      Cart
-                    </Link>
-                </div>
-                <Link to="cart" className={HeaderStyles["cart-link"]}>
-                <div className={HeaderStyles.cart}>
-                      <ShoppingCart size={40} />
-                      <span className={HeaderStyles["cart-items"]}>
-                          {cartProductCount}
-                      </span>
-                </div>
-                </Link>
-            </div>
+            <nav>
+              <div className={HeaderStyles.body}>
+                  <div className={HeaderStyles.links}>
+                      <Link to="/" className={HeaderStyles.link}>
+                          Home
+                      </Link>
+                      <Link to="shop" className={HeaderStyles.link}>
+                          Shop
+                      </Link>
+                      <Link to="cart" className={HeaderStyles.link}>
+                        Cart
+                      </Link>
+                  </div>
+                  <Link to="cart" className={HeaderStyles["cart-link"]}>
+                  <div className={HeaderStyles.cart}>
+                        <ShoppingCart size={40} />
+                        <span className={HeaderStyles["cart-items"]}>
+                            {cartProductCount}
+                        </span>
+                  </div>
+                  </Link>
+              </div>
+            </nav>
         </>
     );
 }
