@@ -4,6 +4,26 @@
     object-fit: contain;
 }
 
+.cart-image {
+    width: 75px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.2rem;
+}
+
+.cart-item {
+    display: flex;
+    position: relative;
+    gap: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.cart-title {
+    text-decoration: underline;
+}
+
 .image-container {
     display: flex;
     justify-content: center;
