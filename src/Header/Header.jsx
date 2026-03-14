@@ -8,17 +8,16 @@ function Header() {
     const cartItems = cartContext?.cartItems ?? [];
     const [cartProductCount, setCartProductCount] = useState(0);
     useEffect(() => {
-        console.log("CART UPDATED2");
-
         let cartProductCountSum = 0;
         cartItems.map((product) => {
             cartProductCountSum += Number(product.count);
         });
         setCartProductCount(cartProductCountSum);
     }, [cartItems]);
+
     return (
         <div className={HeaderStyles.header}>
-            <h1>🛍️ Shopaholic 🛍️</h1>
+            <Link className={HeaderStyles.title}> Shopaholic </Link>
             <nav>
                 <div className={HeaderStyles["nav-body"]}>
                     <div className={HeaderStyles.links}>

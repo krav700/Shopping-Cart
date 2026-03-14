@@ -3,7 +3,7 @@ import { useContext, useRef, useState } from "react";
 import { CartContext } from "../App/App.jsx";
 import { Link } from "react-router";
 
-function Product({ style, title, image, price, quantity }) {
+function Product({ style, id, title, image, price, quantity }) {
     const cartContext = useContext(CartContext);
     const cartItems = cartContext?.cartItems ?? [];
     const setCartItems = cartContext?.setCartItems ?? null;
@@ -28,6 +28,7 @@ function Product({ style, title, image, price, quantity }) {
             }
 
             const productToAdd = {
+                id,
                 title,
                 image,
                 price,

@@ -8,20 +8,22 @@ import { Outlet } from "react-router-dom";
 export const CartContext = createContext(null);
 
 function App() {
-  const [cartItems, setCartItems] = useState([]);
+    const [cartItems, setCartItems] = useState([]);
 
-  return (
-    <div className={AppStyles.container}>
-      <CartContext value={{
-        cartItems,
-        setCartItems
-      }}>
-        <Header />
-        <Outlet />
-      </CartContext>
-      <Footer />
-    </div>
-  );
+    return (
+        <div className={AppStyles.container}>
+            <CartContext
+                value={{
+                    cartItems,
+                    setCartItems,
+                }}
+            >
+                <Header />
+                <Outlet />
+            </CartContext>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
