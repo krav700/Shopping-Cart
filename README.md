@@ -5,6 +5,6 @@ It has basic functionality like adding to cart, seeing how many items are in the
 
 Deployed using [vercel!](https://vercel.com/home)
 
-### [See it for yourself!](https://shopping-cart-delta-coral.vercel.app/cart)
+### [See it for yourself!](https://shopping-cart-delta-coral.vercel.app)
 
 ![Screenshot](./public/app_screenshot.png)
