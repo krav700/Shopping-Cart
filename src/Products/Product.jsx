@@ -1,7 +1,7 @@
 import ProductStyles from "./Product.module.css";
 import { useContext, useRef, useState } from "react";
 import { CartContext } from "../App/App.jsx";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 function Product({ style, id, title, image, price, quantity }) {
     const cartContext = useContext(CartContext);

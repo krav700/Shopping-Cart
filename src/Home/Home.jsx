@@ -1,6 +1,6 @@
 import HomeStyles from "./Home.module.css";
 import HeroImage from "../assets/images/online-store.png";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 function Home() {
     return (
         <main className={HomeStyles.main}>
@@ -25,7 +25,7 @@ function Home() {
                         discover something new!
                     </h3>
                     <Link className={HomeStyles.link} to={"/shop"}>
-                        Brouse Our Selection!
+                        Browse Our Selection!
                     </Link>
                 </div>
             </div>

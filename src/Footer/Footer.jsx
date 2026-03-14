@@ -1,11 +1,10 @@
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import FooterStyles from "./Footer.module.css";
 
 function Footer() {
     return (
         <div className={FooterStyles["footer"]}>
             <footer>
-                <h1 className={FooterStyles.title}>Footer</h1>
                 <div className={FooterStyles["content"]}>
                     <div className={FooterStyles.contact}>
                         <h2>Shopaholic@gmail.com</h2>
