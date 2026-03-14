@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 import "../index.css";
-import AppS from "./App.module.css";
+import AppStyles from "./App.module.css";
 import Header from "../Header/Header.jsx";
 import Footer from "../Footer/Footer.jsx";
 import { Outlet } from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
 
   return (
-    <div className={AppS.container}>
+    <div className={AppStyles.container}>
       <CartContext value={{
         cartItems,
         setCartItems
